@@ -1,179 +1,426 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>HomePage</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230106005929">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «championy»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «championy»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Пошта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. мережі: <a href="">посилання</a></p>
-		</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="img/logo.svg" alt="">
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<div class="menu__language">
+							<span>Eng</span>
+						</div>
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">About Championy?</a></li>
+							<li class="menu__item"><a href="" class="menu__link">How it Work?</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Faq</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Mobile app</a></li>
+						</ul>
+						<ul class="menu__action action">
+							<div class="action__socials">
+								<li class="menu__item">
+									<a href="">
+										<svg width="9" height="19" viewBox="0 0 9 19" fill="#757889" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.40979 3.70904H8.97443V0.983967C8.70449 0.946833 7.77614 0.863281 6.69496 0.863281C4.43906 0.863281 2.89371 2.28223 2.89371 4.89019V7.29034H0.404297V10.3368H2.89371V18.0021H5.94585V10.3375H8.33458L8.71377 7.29106H5.94514V5.19226C5.94585 4.31176 6.18294 3.70904 7.40979 3.70904Z" fill="#757889" />
+										</svg>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="">
+										<svg width="20" height="17" viewBox="0 0 20 17" fill="#757889" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19.9746 2.5551C19.268 2.86504 18.5152 3.07048 17.7302 3.17023C18.5377 2.6881 19.154 1.93048 19.4438 1.01729C18.6909 1.46616 17.8597 1.78323 16.9738 1.96016C16.2589 1.19898 15.24 0.727539 14.1285 0.727539C11.972 0.727539 10.2359 2.47791 10.2359 4.62373C10.2359 4.93248 10.262 5.22935 10.3262 5.51198C7.08786 5.35404 4.22242 3.80198 2.29748 1.43766C1.96142 2.02073 1.7643 2.6881 1.7643 3.40654C1.7643 4.75554 2.45898 5.95135 3.49448 6.64366C2.86867 6.63179 2.25473 6.4501 1.73461 6.16391C1.73461 6.17579 1.73461 6.19123 1.73461 6.20666C1.73461 8.09954 3.0848 9.67179 4.85536 10.034C4.5383 10.1207 4.19273 10.1622 3.83411 10.1622C3.58473 10.1622 3.33298 10.148 3.09667 10.0957C3.60136 11.6383 5.03348 12.7724 6.73636 12.8092C5.41111 13.8459 3.72842 14.4705 1.9068 14.4705C1.58736 14.4705 1.28098 14.4562 0.974609 14.417C2.70005 15.5297 4.74492 16.165 6.95011 16.165C14.1179 16.165 18.0366 10.2275 18.0366 5.08091C18.0366 4.90873 18.0307 4.74248 18.0224 4.57741C18.7954 4.02879 19.445 3.3436 19.9746 2.5551Z" fill="#757889" />
+										</svg>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="">
+										<svg width="20" height="19" viewBox="0 0 20 19" fill="#757889" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M6.91211 0H14.0371C17.3158 0 19.9746 2.65881 19.9746 5.9375V13.0625C19.9746 16.3412 17.3158 19 14.0371 19H6.91211C3.63342 19 0.974609 16.3412 0.974609 13.0625V5.9375C0.974609 2.65881 3.63342 0 6.91211 0ZM14.0371 17.2188C16.3289 17.2188 18.1933 15.3544 18.1933 13.0625V5.9375C18.1933 3.64563 16.3289 1.78125 14.0371 1.78125H6.91205C4.62018 1.78125 2.7558 3.64563 2.7558 5.9375V13.0625C2.7558 15.3544 4.62018 17.2188 6.91205 17.2188H14.0371Z" fill="#757889" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M5.72461 9.5C5.72461 6.87681 7.85142 4.75 10.4746 4.75C13.0978 4.75 15.2246 6.87681 15.2246 9.5C15.2246 12.1232 13.0978 14.25 10.4746 14.25C7.85142 14.25 5.72461 12.1232 5.72461 9.5ZM7.5058 9.5C7.5058 11.1364 8.83818 12.4688 10.4746 12.4688C12.1109 12.4688 13.4433 11.1364 13.4433 9.5C13.4433 7.86244 12.1109 6.53125 10.4746 6.53125C8.83818 6.53125 7.5058 7.86244 7.5058 9.5Z" fill="#757889" />
+											<circle cx="15.2248" cy="3.88641" r="0.431818" fill="#757889" />
+										</svg>
+									</a>
+								</li>
+							</div>
+							<div class="action__buttons buttons">
+								<a href="" class="buttons__button--transparent"><span class="buttons__link--transparent">Sign In</span></a>
+								<a href="" class="buttons__button"><span class="buttons__link">Sign Up</span></a>
+							</div>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="section">
+				<div class="section__container">
+					<div class="section__column">
+						<div class="setion__article">
+							<h1 class="section__title">
+								Shop in more stores and <br> we will deliver
+							</h1>
+							<p class="section__subtitle">The fastes,easies way to shop and send what <br> you want from your doorstep. </p>
+						</div>
+						<div class="section__action">
+							<a href="" class="section__button">
+								Sign Up
+							</a>
+							<a href="" class="section__button--watch-video">
+								Watch Video
+							</a>
+						</div>
+					</div>
+					<div class="section__column">
+						<div class="section__image">
+							<img src="img/frame.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="section__decoration decoration">
+					<div class="decoration__item"></div>
+					<div class="decoration__item">
+
+					</div>
+					<div class="decoration__item"></div>
+				</div>
+			</section>
+			<section class="section-second">
+				<div class="section-second__container">
+					<div class="section-second__content">
+						<div class="section-second__heading">
+							<h2 class="section-second__subtitle">Why championy?</h2>
+							<p class="section-second__title">Our futures</p>
+						</div>
+						<div class="section-second__column column-second">
+							<div class="column-second__item">
+								<div class="column-second__image">
+									<img src="img/frame1.svg" alt="">
+								</div>
+								<h3 class="column-second__title">Pay In local currency</h3>
+								<p class="column-second__subtitle">No Credit Card need ( Visa, MasterCard ) use local debit card</p>
+							</div>
+							<div class="column-second__item">
+								<div class="column-second__image">
+									<img src="img/frame1.svg" alt="">
+								</div>
+								<h3 class="column-second__title">Free z</h3>
+								<p class="column-second__subtitle">No Credit Card need ( Visa, MasterCard ) use local debit card</p>
+							</div>
+							<div class="column-second__item">
+								<div class="column-second__image">
+									<img src="img/frame2.svg" alt="">
+								</div>
+								<h3 class="column-second__title">Global office</h3>
+								<p class="column-second__subtitle">Championy Provide multipale address around the world ( USA, UK, Turkey .. more )</p>
+							</div>
+							<div class="column-second__item">
+								<div class="column-second__image">
+									<img src="img/frame3.svg" alt="">
+								</div>
+								<h3 class="column-second__title">Fast Delivery</h3>
+								<p class="column-second__subtitle">Tracking shipment using express delivery company</p>
+							</div>
+							<div class="column-second__item">
+								<div class="column-second__image">
+									<img src="img/frame4.svg" alt="">
+								</div>
+								<h3 class="column-second__title">No hidden Fees</h3>
+								<p class="column-second__subtitle">All expensive include ( shipping, Customs Duty & Taxes ) no Extra fees</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-third">
+				<div class="section-third__deco--1">
+				</div>
+				<div class="section-third__deco--2">
+				</div>
+				<div class="section-third__container">
+					<div class="section-third__content">
+						<div class="section-third__title">How it work?</div>
+						<div class="section-third__columns">
+							<div class="section-third__column">
+								<ul class="section-third__list list">
+									<li class="list__item">
+										<h3 class="list__tiitle">Sign up & Start Shopping </h3>
+										<p class="list__text">after Signing up with your best select plan shop with your favourite retailer , using your mail box as shipping address </p>
+									</li>
+									<li class="list__item">
+										<h3 class="list__tiitle">Combines</h3>
+										<p class="list__text">combines your packages to save up 85% from shipping cost</p>
+									</li>
+									<li class="list__item">
+										<h3 class="list__tiitle">Ship</h3>
+										<p class="list__text">ship your order to any country around the world</p>
+									</li>
+								</ul>
+							</div>
+							<div class="section-third__column">
+								<a href="" class="section-third__image">
+									<img src="img/third-section-frame.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-fourth">
+
+
+				<div class="section-fourth__container">
+					<div class="section-fourth__content">
+						<div class="section-fourth__deco--1"></div>
+						<div class="section-fourth__deco--2"></div>
+						<div class="section-fourth__deco--3"></div>
+						<h2 class="section-fourth__title">Championy Buying Assistant</h2>
+						<p class="section-fourth__text">Know what you want to buy? Let us know, and we'll purchase it for you!</p>
+						<form action="files/sendmail/sendmail.php" method="POST">
+							<input type="text" name="form[email]" data-error="Error" placeholder="Past product link" class="input">
+							<button type="submit" class="button">Add to my cart</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="section-fifth">
+				<div class="section-fifth__container">
+					<div class="section-fifth__title">Popular Shops</div>
+					<div class="section-fifth__grid grid">
+						<a href="" class="grid__item">
+							<div class="grid__content">
+								<div class="grid__image">
+									<img src="img/grid/amazon.svg" alt="">
+								</div>
+								<div class="grid__badge">Marketplace</div>
+							</div>
+						</a>
+						<a href="" class="grid__item">
+							<div class="grid__content">
+								<div class="grid__image">
+									<img src="img/grid/ebay.svg" alt="">
+								</div>
+								<div class="grid__badge">Marketplace</div>
+							</div>
+						</a>
+						<a href="" class="grid__item">
+							<div class="grid__content">
+								<div class="grid__image">
+									<img src="img/grid/walmart.svg" alt="">
+								</div>
+								<div class="grid__badge">Marketplace</div>
+							</div>
+						</a>
+						<a href="" class="grid__item">
+							<div class="grid__content">
+								<div class="grid__image">
+									<img src="img/grid/asos.svg" alt="">
+								</div>
+								<div class="grid__badge">Marketplace</div>
+							</div>
+						</a>
+						<a href="" class="grid__item">
+							<div class="grid__content">
+								<div class="grid__image">
+									<img src="img/grid/nike.svg" alt="">
+								</div>
+								<div class="grid__badge">Marketplace</div>
+							</div>
+						</a>
+						<a href="" class="grid__item">
+							<div class="grid__content">
+								<div class="grid__image">
+									<img src="img/grid/hm.svg" alt="">
+								</div>
+								<div class="grid__badge">Marketplace</div>
+							</div>
+						</a>
+						<a href="" class="grid__item">
+							<div class="grid__content">
+								<div class="grid__image">
+									<img src="img/grid/iherb.svg" alt="">
+								</div>
+								<div class="grid__badge">Marketplace</div>
+							</div>
+						</a>
+						<a href="" class="grid__item">
+							<div class="grid__content">
+								<div class="grid__image">
+									<img src="img/grid/ralph.svg" alt="">
+								</div>
+								<div class="grid__badge">Marketplace</div>
+							</div>
+						</a>
+					</div>
+					<a href="" class="section-fifth__button">
+						<span>See more</span>
+					</a>
+				</div>
+			</section>
+			<section clhass="section-sixth">
+				<div class="section-sixth__container">
+					<div class="section-sixth__content">
+						<div class="section-sixth__title">Top Questions</div>
+						<div data-showmore class="section-sixth__showmore showmore">
+							<div data-showmore-content="93" class="showmore__content">
+								<h2 class="showmore__heading">From which site can I buy?</h2>
+								<p class="showmore__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae vel natus architecto sapiente, perferendis rerum molestiae laborum facere ipsum, nobis eaque voluptates, id a nihil veritatis dolor officia recusandae facilis!
+								</p>
+							</div>
+							<div class="showmore__buttons">
+								<button hidden data-showmore-button type="button" class="showmore__more">
+									<span>
+										<svg width="14" height="9" viewBox="0 0 14 9" fill="#7178EF" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.6831 1.71604C13.6831 2.01846 13.5675 2.32246 13.3364 2.55363L7.8422 8.07471C7.61895 8.29796 7.31654 8.42304 6.99987 8.42304C6.68479 8.42304 6.38237 8.29796 6.15912 8.07471L0.661785 2.55363C0.199452 2.08971 0.199452 1.33921 0.664952 0.875292C1.13045 0.412959 1.88253 0.414542 2.34487 0.878459L6.99987 5.55404L11.6549 0.878459C12.1172 0.414542 12.8677 0.412959 13.3332 0.875292C13.5675 1.10646 13.6831 1.41204 13.6831 1.71604" fill="#7178EF" />
+										</svg>
+									</span>
+									<span>
+										<svg width="14" height="9" viewBox="0 0 14 9" fill="#7178EF" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.6831 1.71604C13.6831 2.01846 13.5675 2.32246 13.3364 2.55363L7.8422 8.07471C7.61895 8.29796 7.31654 8.42304 6.99987 8.42304C6.68479 8.42304 6.38237 8.29796 6.15912 8.07471L0.661785 2.55363C0.199452 2.08971 0.199452 1.33921 0.664952 0.875292C1.13045 0.412959 1.88253 0.414542 2.34487 0.878459L6.99987 5.55404L11.6549 0.878459C12.1172 0.414542 12.8677 0.412959 13.3332 0.875292C13.5675 1.10646 13.6831 1.41204 13.6831 1.71604" fill="#7178EF" />
+										</svg>
+									</span>
+								</button>
+							</div>
+						</div>
+						<div data-showmore class="section-sixth__showmore showmore">
+							<div data-showmore-content="93" class="showmore__content">
+								<h2 class="show__heading ">Can't add some items to the cart ?</h2>
+								<p class="showmore__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae vel natus architecto sapiente, perferendis rerum molestiae laborum facere ipsum, nobis eaque voluptates, id a nihil veritatis dolor officia recusandae facilis!</p>
+							</div>
+							<div class="showmore__buttons">
+								<button hidden data-showmore-button type="button" class="showmore__more">
+									<span>
+										<svg width="14" height="9" viewBox="0 0 14 9" fill="#7178EF" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.6831 1.71604C13.6831 2.01846 13.5675 2.32246 13.3364 2.55363L7.8422 8.07471C7.61895 8.29796 7.31654 8.42304 6.99987 8.42304C6.68479 8.42304 6.38237 8.29796 6.15912 8.07471L0.661785 2.55363C0.199452 2.08971 0.199452 1.33921 0.664952 0.875292C1.13045 0.412959 1.88253 0.414542 2.34487 0.878459L6.99987 5.55404L11.6549 0.878459C12.1172 0.414542 12.8677 0.412959 13.3332 0.875292C13.5675 1.10646 13.6831 1.41204 13.6831 1.71604" fill="#7178EF" />
+										</svg>
+									</span>
+									<span>
+										<svg width="14" height="9" viewBox="0 0 14 9" fill="#7178EF" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.6831 1.71604C13.6831 2.01846 13.5675 2.32246 13.3364 2.55363L7.8422 8.07471C7.61895 8.29796 7.31654 8.42304 6.99987 8.42304C6.68479 8.42304 6.38237 8.29796 6.15912 8.07471L0.661785 2.55363C0.199452 2.08971 0.199452 1.33921 0.664952 0.875292C1.13045 0.412959 1.88253 0.414542 2.34487 0.878459L6.99987 5.55404L11.6549 0.878459C12.1172 0.414542 12.8677 0.412959 13.3332 0.875292C13.5675 1.10646 13.6831 1.41204 13.6831 1.71604" fill="#7178EF" />
+										</svg>
+									</span>
+								</button>
+							</div>
+						</div>
+						<div data-showmore class="section-sixth__showmore showmore">
+							<div data-showmore-content="93" class="showmore__content">
+								<h2 class="show3__heading ">How do I track the status of my order ?</h2>
+								<p class="showmore__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae vel natus architecto sapiente, perferendis rerum molestiae laborum facere ipsum, nobis eaque voluptates, id a nihil veritatis dolor officia recusandae facilis!</p>
+							</div>
+							<div class="showmore__buttons">
+								<button hidden data-showmore-button type="button" class="showmore__more">
+									<span>
+										<svg width="14" height="9" viewBox="0 0 14 9" fill="#7178EF" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.6831 1.71604C13.6831 2.01846 13.5675 2.32246 13.3364 2.55363L7.8422 8.07471C7.61895 8.29796 7.31654 8.42304 6.99987 8.42304C6.68479 8.42304 6.38237 8.29796 6.15912 8.07471L0.661785 2.55363C0.199452 2.08971 0.199452 1.33921 0.664952 0.875292C1.13045 0.412959 1.88253 0.414542 2.34487 0.878459L6.99987 5.55404L11.6549 0.878459C12.1172 0.414542 12.8677 0.412959 13.3332 0.875292C13.5675 1.10646 13.6831 1.41204 13.6831 1.71604" fill="#7178EF" />
+										</svg>
+									</span>
+									<span>
+										<svg width="14" height="9" viewBox="0 0 14 9" fill="#7178EF" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.6831 1.71604C13.6831 2.01846 13.5675 2.32246 13.3364 2.55363L7.8422 8.07471C7.61895 8.29796 7.31654 8.42304 6.99987 8.42304C6.68479 8.42304 6.38237 8.29796 6.15912 8.07471L0.661785 2.55363C0.199452 2.08971 0.199452 1.33921 0.664952 0.875292C1.13045 0.412959 1.88253 0.414542 2.34487 0.878459L6.99987 5.55404L11.6549 0.878459C12.1172 0.414542 12.8677 0.412959 13.3332 0.875292C13.5675 1.10646 13.6831 1.41204 13.6831 1.71604" fill="#7178EF" />
+										</svg>
+									</span>
+								</button>
+							</div>
+						</div>
+						<div data-showmore class="section-sixth__showmore showmore">
+							<div data-showmore-content="93" class="block__content">
+								<h2 class="show4__heading ">Do I pay customs and delivery charges upon arrival ?</h2>
+								<p class="showmore__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae vel natus architecto sapiente, perferendis rerum molestiae laborum facere ipsum, nobis eaque voluptates, id a nihil veritatis dolor officia recusandae facilis!</p>
+							</div>
+							<div class="showmore__buttons">
+								<button hidden data-showmore-button type="button" class="showmore__more">
+									<span>
+										<svg width="14" height="9" viewBox="0 0 14 9" fill="#7178EF" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.6831 1.71604C13.6831 2.01846 13.5675 2.32246 13.3364 2.55363L7.8422 8.07471C7.61895 8.29796 7.31654 8.42304 6.99987 8.42304C6.68479 8.42304 6.38237 8.29796 6.15912 8.07471L0.661785 2.55363C0.199452 2.08971 0.199452 1.33921 0.664952 0.875292C1.13045 0.412959 1.88253 0.414542 2.34487 0.878459L6.99987 5.55404L11.6549 0.878459C12.1172 0.414542 12.8677 0.412959 13.3332 0.875292C13.5675 1.10646 13.6831 1.41204 13.6831 1.71604" fill="#7178EF" />
+										</svg>
+									</span>
+									<span>
+										<svg width="14" height="9" viewBox="0 0 14 9" fill="#7178EF" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.6831 1.71604C13.6831 2.01846 13.5675 2.32246 13.3364 2.55363L7.8422 8.07471C7.61895 8.29796 7.31654 8.42304 6.99987 8.42304C6.68479 8.42304 6.38237 8.29796 6.15912 8.07471L0.661785 2.55363C0.199452 2.08971 0.199452 1.33921 0.664952 0.875292C1.13045 0.412959 1.88253 0.414542 2.34487 0.878459L6.99987 5.55404L11.6549 0.878459C12.1172 0.414542 12.8677 0.412959 13.3332 0.875292C13.5675 1.10646 13.6831 1.41204 13.6831 1.71604" fill="#7178EF" />
+										</svg>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="seventh-section">
+				<div class="seventh-section__container">
+					<div class="seventh-setion__content">
+						<div class="seventh-section__title">Our service <br> is always at hand</div>
+						<div class="seventh-section__links">
+							<a href="" class="seventh-section__link">
+								<img src="img/sevent-section/apple.svg" alt="">
+							</a>
+							<a href="" class="seventh-section__link">
+								<img src="img/sevent-section/google.svg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="seventh-section__decor decor">
+						<div class="decor__item">
+
+						</div>
+						<div class="decor__item">
+
+						</div>
+						<div class="decor__item">
+
+						</div>
+						<div class="decor__item">
+
+						</div>
+						<div class="decor__item">
+
+						</div>
+						<div class="decor__item">
+
+						</div>
+						<div class="decor__item">
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
 	</div>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
+<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__content">
+			<div class="footer__logo">
+				<img src="img/logo.svg" alt="">
+			</div>
+			<nav class="footer__navigation navigation">
+				<a href="" class="navigation__item"><span class="navigation__link">Faq</span></a>
+				<a href="" class="navigation__item"><span class="navigation__link">Contact US</span></a>
+				<a href="" class="navigation__item"><span class="navigation__link">Privacy policy</span></a>
+				<a href="" class="navigation__item"><span class="navigation__link">Terms & Conditions</span></a>
+			</nav>
+		</div>
+		<div class="footer__rights">
+			<span>© Сhampiony 2021, All Rights Reserved</span>
+		</div>
+	</div>
+</footer>
+</div>
+<script src="js/app.min.js?_v=20230106005929"></script>
+</body>
 
 </html>

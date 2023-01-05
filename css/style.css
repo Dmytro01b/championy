@@ -1477,6 +1477,13 @@ body {
   color: #FFFFFF;
   max-width: 420px;
   margin-bottom: 2.1875rem;
+  position: relative;
+  z-index: 2;
+}
+
+.seventh-section__links {
+  position: relative;
+  z-index: 2;
 }
 
 .seventh-setion__content {
