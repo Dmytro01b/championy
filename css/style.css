@@ -284,7 +284,7 @@ textarea.input {
 }
 
 [data-showmore-content] .showmore__text {
-  padding: 10px 55px 30px 91px;
+  padding: 30px 55px 30px 91px;
 }
 
 [data-showmore-button] {
@@ -1730,28 +1730,6 @@ body {
   }
 }
 
-@media (max-width: 425px) {
-  [data-showmore-content] .showmore__heading {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  [data-showmore-content] .show__heading {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  [data-showmore-content] .show3__heading {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  [data-showmore-content] .show4__heading {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-
 @media (max-width: 375px) {
   .input {
     min-width: 250px;
@@ -2221,6 +2199,37 @@ body {
   .section-third__title::before {
     left: 45px;
   }
+
+  .navigation {
+    row-gap: 15px;
+  }
+
+  .navigation__link {
+    font-size: 0.75rem;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 26.5625rem) {
+  [data-showmore-content] .showmore__heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  [data-showmore-content] .show__heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  [data-showmore-content] .show3__heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  [data-showmore-content] .show4__heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 25.3125rem) {
@@ -2234,9 +2243,52 @@ body {
     left: 15px;
   }
 
+  .showmore__heading {
+    font-size: 0.75rem;
+    line-height: 16px;
+  }
+
+  .show__heading {
+    font-size: 0.75rem;
+    line-height: 16px;
+  }
+
+  .show3__heading {
+    font-size: 0.75rem;
+    line-height: 16px;
+  }
+
   .show4__heading {
     font-size: 0.75rem;
     line-height: 16px;
+  }
+}
+
+@media (max-width: 21.875rem) {
+  [data-showmore-content] .showmore__heading {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  [data-showmore-content] .show__heading {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  [data-showmore-content] .show3__heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  [data-showmore-content] .show4__heading {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 20.5625rem) {
+  .footer__content::after {
+    top: 140px;
   }
 }
 
